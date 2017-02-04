@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="tct_pic" size="10.000000 7.500000" />
+    <ImageTarget name="nya10" size="10.000000 9.481865" />
+    <ImageTarget name="yajima" size="10.000000 17.786667" />
+    <ImageTarget name="now" size="10.000000 7.500000" />
+    <ImageTarget name="nya" size="100.000000 94.818649" />
+    <ImageTarget name="ace" size="100.000000 262.991516" />
+  </Tracking>
+</QCARConfig>
