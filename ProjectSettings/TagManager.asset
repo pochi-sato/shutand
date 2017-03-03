@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 1stAction
+  - 2ndAction
+  - 3rdAction
+  - 4thAction
+  - 5thAction
   layers:
   - Default
   - TransparentFX
