@@ -10,6 +10,12 @@ public class ClickComentManager : MonoBehaviour {
 	GameObject[] thirds;
 	GameObject[] fourths;
 
+	void Change(GameObject[] objs, bool nextStatus) {
+		foreach (GameObject obj in objs) {
+			obj.SetActive (nextStatus);
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
 		firsts = GameObject.FindGameObjectsWithTag("1stAction");
@@ -35,57 +41,31 @@ public class ClickComentManager : MonoBehaviour {
 		if (Input.GetKey ("mouse 0")) {
 			switch (count) {
 			case 0:
-				Debug.Log("----------------------------1");
-				foreach (GameObject first in firsts) {
-					Debug.Log("---------------------------- foreach");
-					first.SetActive (true);
-				}
-
+				Debug.Log ("----------------------------1");
+				Change (firsts, true);
 				break;
 			case 1:
 				Debug.Log ("----------------------------2");
-				foreach (GameObject first in firsts) {
-					first.SetActive (false);
-				}
-
-				foreach (GameObject second in seconds) {
-					second.SetActive (true);
-				}
+				Change (firsts, false);
+				Change (seconds, true);
 				break;
 			case 2:
 				Debug.Log ("----------------------------3");
-				foreach (GameObject second in seconds) {
-					second.SetActive (false);
-				}
-
-				foreach (GameObject third in thirds) {
-					third.SetActive (true);
-				}
+				Change (seconds, false);
+				Change (thirds, true);
 				break;
 			case 3:
 				Debug.Log ("----------------------------4");
-				foreach (GameObject third in thirds) {
-					third.SetActive (false);
-				}
-
-				foreach (GameObject fourth in fourths) {
-					fourth.SetActive (true);
-				}
+				Change (thirds, false);
+				Change (fourths, true);
 				break;
 			default:
 				Debug.Log ("----------------------------df");
-				foreach (GameObject first in firsts) {
-					first.SetActive (false);
-				}
-				foreach (GameObject second in seconds) {
-					second.SetActive (false);
-				}
-				foreach (GameObject third in thirds) {
-					third.SetActive (false);
-				}
-				foreach (GameObject fourth in fourths) {
-					fourth.SetActive (false);
-				}
+				Change (firsts, false);
+				Change (seconds, false);
+				Change (thirds, false);
+				Change (fourths, false);
+
 				break;
 			}
 
