@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
-using GodTouches;
 
 public class ClickActiveSwitchManager : MonoBehaviour {
 
@@ -14,8 +13,9 @@ public class ClickActiveSwitchManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (GodTouch.GetPhase());
-		if (GodTouch.GetPhase() == GodPhase.Ended) {
+//		Debug.Log (GodTouch.GetPhase());
+//		if (GodTouch.GetPhase() == GodPhase.Ended) {
+		if (Input.GetKey ("mouse 0")) {
 			Debug.Log ("clicked!");
 			StartCoroutine(postMessage());
 			Debug.Log ("posted!!!");
@@ -29,7 +29,7 @@ public class ClickActiveSwitchManager : MonoBehaviour {
 
 	IEnumerator postMessage(){
 		Debug.Log ("========postMesaage=======");
-		string message = "@tacknyan が会いたがってるよ！";
+		string message = "ご主人様と話したがってる人がいるよ！あとで確認してね！";
 		const string webhookUrl = "https://hooks.slack.com/services/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";					 
 		// フォームを作る
 		WWWForm form = new WWWForm();

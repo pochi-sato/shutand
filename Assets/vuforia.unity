@@ -179,7 +179,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: mi2Material
+  m_Name: tctMaterial
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -1158,7 +1158,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091071975}
-  m_Text: "\u306B\u3083\u3093\u306B\u3001\n\u4F1D\u3048\u3066\u304A\u304F\u306D\uFF01"
+  m_Text: "\u306B\u3083\u3093\u306B\u3001\n\u4F1D\u3048\u305F\u3088\uFF01"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

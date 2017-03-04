@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
 public class ClickComentManager : MonoBehaviour {
 
@@ -58,9 +59,10 @@ public class ClickComentManager : MonoBehaviour {
 				Debug.Log ("----------------------------4");
 				Change (thirds, false);
 				Change (fourths, true);
+				StartCoroutine(postMessage());
 				break;
 			case 4:
-				Debug.Log ("----------------------------4");
+				Debug.Log ("----------------------------5");
 				Change (fourths, false);
 				count = 0;
 				break;
@@ -78,4 +80,27 @@ public class ClickComentManager : MonoBehaviour {
 
 		}
 	}
+
+	IEnumerator postMessage(){
+		Debug.Log ("========postMesaage=======");
+		string message = "ご主人様と話したがってる人がいるよ！あとで確認してね！";
+		const string webhookUrl = "https://hooks.slack.com/services/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";					 
+		// フォームを作る
+		WWWForm form = new WWWForm();
+		string payload = $"{{\"text\": \"{message}\"}}";
+		form.AddField("payload", payload);
+		Debug.Log(payload);
+
+		// リクエストを送る
+
+		using(UnityWebRequest www = UnityWebRequest.Post (webhookUrl, form)){
+			yield return www.Send();
+			Debug.Log("Requested!");
+			if (www.isError) {
+				Debug.Log(www.error);
+			} else {
+				Debug.Log("Form upload complete!");
+			}
+		}
+	}	
 }
