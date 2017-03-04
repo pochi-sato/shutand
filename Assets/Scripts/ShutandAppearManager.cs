@@ -4,10 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
 
-public class ShutandAppearManagerNya10 : MonoBehaviour, ITrackableEventHandler
+public class ShutandAppearManager : MonoBehaviour, ITrackableEventHandler
 {
 
-	private string trackableName = "nya10";
 	private TrackableBehaviour mTrackableBehaviour;
 	public GameObject targetShutand;
 
@@ -34,17 +33,13 @@ public class ShutandAppearManagerNya10 : MonoBehaviour, ITrackableEventHandler
 
 	private void OnTrackingFound()
 	{
-		Debug.Log("found きたよ、対象のやつが!!!---------------------------1");
-		Debug.Log(trackableName);
-		Debug.Log("found!!!---------------------------2");
+		Debug.Log("found!!!---------------------------");
 		targetShutand.SetActive (true);
 	}
 
 	private void OnTrackingLost()
 	{
-		Debug.Log("lost きたよ、対象のやつが!!!---------------------------1");
-		Debug.Log(trackableName);
-		Debug.Log("lost!!!---------------------------2");
+		Debug.Log("lost!!!---------------------------");
 		targetShutand.SetActive (false);
 	}
 
