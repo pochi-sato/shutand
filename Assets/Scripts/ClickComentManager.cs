@@ -59,6 +59,11 @@ public class ClickComentManager : MonoBehaviour {
 				Change (thirds, false);
 				Change (fourths, true);
 				break;
+			case 4:
+				Debug.Log ("----------------------------4");
+				Change (fourths, false);
+				count = 0;
+				break;
 			default:
 				Debug.Log ("----------------------------df");
 				Change (firsts, false);

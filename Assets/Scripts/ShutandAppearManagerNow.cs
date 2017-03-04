@@ -9,8 +9,7 @@ public class ShutandAppearManagerNow : MonoBehaviour, ITrackableEventHandler
 
 	private string trackableName = "now";
 	private TrackableBehaviour mTrackableBehaviour;
-	public GameObject targetObj;
-
+	public GameObject targetShutand;
 
 	// Use this for initialization
 	void Start ()
@@ -25,8 +24,7 @@ public class ShutandAppearManagerNow : MonoBehaviour, ITrackableEventHandler
 		Debug.Log(transform.tag); //タグ
 		Debug.Log("start----------------------------------------2");
 
-
-		targetObj.SetActive (false);
+		targetShutand.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -39,7 +37,7 @@ public class ShutandAppearManagerNow : MonoBehaviour, ITrackableEventHandler
 		Debug.Log("found きたよ、対象のやつが!!!---------------------------1");
 		Debug.Log(trackableName);
 		Debug.Log("found!!!---------------------------2");
-		targetObj.SetActive (true);
+		targetShutand.SetActive (true);
 	}
 
 	private void OnTrackingLost()
@@ -47,7 +45,7 @@ public class ShutandAppearManagerNow : MonoBehaviour, ITrackableEventHandler
 		Debug.Log("lost きたよ、対象のやつが!!!---------------------------1");
 		Debug.Log(trackableName);
 		Debug.Log("lost!!!---------------------------2");
-		targetObj.SetActive (false);
+		targetShutand.SetActive (false);
 	}
 
 	public void OnTrackableStateChanged(
