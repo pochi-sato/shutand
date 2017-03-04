@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UnityChanDemo1 : MonoBehaviour {
+public class StayOrJumping : MonoBehaviour {
 
 	private Animator animator;
 	// Use this for initialization
@@ -12,11 +12,11 @@ public class UnityChanDemo1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey ("mouse 0")) {
-			if (animator.GetBool("is_running")) {
-				animator.SetBool("is_running", false);
+			if (animator.GetBool("jumping")) {
+				animator.SetBool("jumping", false);
 			} else {
 				transform.position += transform.forward * 0.01f;
-				animator.SetBool("is_running", true);
+				animator.SetBool("jumping", true);
 			}
 		}
 		if (Input.GetKey("right")) {
