@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 98625647}
   - component: {fileID: 98625649}
   - component: {fileID: 98625648}
+  - component: {fileID: 98625650}
   m_Layer: 0
   m_Name: Yotei
   m_TagString: 2ndAction
@@ -114,13 +115,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98625646}
-  m_LocalRotation: {x: -0, y: 0.9659258, z: -0.2588191, w: 0}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 4.7, y: 21.5, z: 4.5}
-  m_LocalScale: {x: 1.6554085, y: 1.6554085, z: 1.6554085}
+  m_LocalScale: {x: -1.655409, y: 1.6554085, z: 1.6554085}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 30, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!102 &98625648
 TextMesh:
   serializedVersion: 3
@@ -173,6 +174,18 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &98625650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 98625646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!21 &274450351
 Material:
   serializedVersion: 6
@@ -347,6 +360,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8dffdd39c8e4d5099efb19aca4111c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &634748630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634748625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!1001 &639544430
 Prefab:
   m_ObjectHideFlags: 0
@@ -413,6 +438,18 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 169824, guid: e6f2404e2490b0240a900cb867e2aefc, type: 2}
   m_PrefabInternal: {fileID: 639544430}
+--- !u!114 &639544432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639544431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!114 &639544434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +517,7 @@ GameObject:
   - component: {fileID: 1069310598}
   - component: {fileID: 1069310600}
   - component: {fileID: 1069310599}
+  - component: {fileID: 1069310601}
   m_Layer: 0
   m_Name: Dentatsu?
   m_TagString: 3rdAction
@@ -493,13 +531,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1069310597}
-  m_LocalRotation: {x: -0, y: 0.9659258, z: -0.2588191, w: 0}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 4.7, y: 21.5, z: 4.5}
-  m_LocalScale: {x: 1.6554085, y: 1.6554085, z: 1.6554085}
+  m_LocalScale: {x: -1.655409, y: 1.6554085, z: 1.6554085}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 30, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!102 &1069310599
 TextMesh:
   serializedVersion: 3
@@ -552,6 +590,18 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &1069310601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069310597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!1001 &1072834973
 Prefab:
   m_ObjectHideFlags: 0
@@ -652,6 +702,7 @@ GameObject:
   - component: {fileID: 1123047194}
   - component: {fileID: 1123047193}
   - component: {fileID: 1123047192}
+  - component: {fileID: 1123047195}
   m_Layer: 0
   m_Name: Hellow
   m_TagString: 1stAction
@@ -717,13 +768,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1123047191}
-  m_LocalRotation: {x: -0, y: 0.9659258, z: -0.2588191, w: 0}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 5, y: 19.2, z: 5.8}
-  m_LocalScale: {x: 1.6554085, y: 1.6554085, z: 1.6554085}
+  m_LocalScale: {x: -1.655409, y: 1.655409, z: 1.6554085}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 30, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &1123047195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123047191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!1001 &1211475262
 Prefab:
   m_ObjectHideFlags: 0
@@ -1021,6 +1084,18 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: d265bb418a3d9574aaa5e7500d619208, type: 3}
   m_PrefabInternal: {fileID: 739965576}
+--- !u!114 &1727961075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727961074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!114 &1727961077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8973dd5c7a5ff4e7b9a56f5b59424dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!20 &1840674077 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 2000000, guid: bf30d577eead1ef40bcf2b404289daf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1864204297}
 --- !u!1 &1861208046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,6 +1245,7 @@ GameObject:
   - component: {fileID: 2091071976}
   - component: {fileID: 2091071978}
   - component: {fileID: 2091071977}
+  - component: {fileID: 2091071979}
   m_Layer: 0
   m_Name: Dentatsu
   m_TagString: 4thAction
@@ -1178,13 +1259,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091071975}
-  m_LocalRotation: {x: -0, y: 0.9659258, z: -0.2588191, w: 0}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: 4.7, y: 21.5, z: 4.5}
-  m_LocalScale: {x: 1.6554085, y: 1.6554085, z: 1.6554085}
+  m_LocalScale: {x: -1.655409, y: 1.6554085, z: 1.6554085}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 30, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!102 &2091071977
 TextMesh:
   serializedVersion: 3
@@ -1237,6 +1318,18 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &2091071979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091071975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be7dc242b684217990a5f1c815a2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetCamera: {fileID: 1840674077}
 --- !u!43 &2127610534
 Mesh:
   m_ObjectHideFlags: 0
