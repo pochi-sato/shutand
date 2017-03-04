@@ -16,7 +16,19 @@ public class DirectionHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float cameraX = this.targetCamera.transform.position.x;
+		float cameraY = this.targetCamera.transform.position.y;
+		float cameraZ = this.targetCamera.transform.position.z;
+
+
 		//カメラの方向を向くようにする。
 		this.transform.LookAt(this.targetCamera.transform.position);    
+		Debug.Log ("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+		Debug.Log (cameraX);
+		Debug.Log (cameraY);
+		Debug.Log (cameraZ);
+		Debug.Log ("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+		Vector3 pos = new Vector3(cameraX - 10, cameraY - 10, cameraZ - 10);
+		this.transform.position = pos;
 	}
 }
