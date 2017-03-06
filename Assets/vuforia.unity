@@ -129,7 +129,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 98625646}
-  m_Text: "\u306B\u3083\u3093\u306F\u3001\n\u3044\u307E\u3001Wheel\u3067\u3001\n\u4E8C\u6B21\u9762\u63A5\u3092\n\u3057\u3066\u3044\u308B\u3088\uFF01"
+  m_Text: "mi2\u306F\u3001\n\u3044\u307E\u3001Wheel\u3067\u3001\n\u4E8C\u6B21\u9762\u63A5\u3092\n\u3057\u3066\u3044\u308B\u3088\uFF01"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -545,7 +545,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1069310597}
-  m_Text: "\u306B\u3083\u3093\u306B\u3001\n\u4F1D\u3048\u3066\u304A\u304F\uFF1F"
+  m_Text: "mi2\u306B\u3001\n\u4F1D\u3048\u3066\u304A\u304F\uFF1F"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -717,7 +717,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1123047191}
-  m_Text: "\u3053\u3093\u306B\u3061\u306F\uFF01\n\u306B\u3083\u3093\u306E\n\u3057\u3085\u305F\u3093\u3069\u3067\u3059"
+  m_Text: "\u3053\u3093\u306B\u3061\u306F\uFF01\nmi2\u306E\n\u3057\u3085\u305F\u3093\u3069\u3067\u3059"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1277,7 +1277,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091071975}
-  m_Text: "\u306B\u3083\u3093\u306B\u3001\n\u4F1D\u3048\u305F\u3088\uFF01"
+  m_Text: "mi2\u306B\u3001\n\u4F1D\u3048\u305F\u3088\uFF01"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1

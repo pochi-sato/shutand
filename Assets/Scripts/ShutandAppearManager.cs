@@ -18,10 +18,10 @@ public class ShutandAppearManager : MonoBehaviour, ITrackableEventHandler
 		{
 			mTrackableBehaviour.RegisterTrackableEventHandler(this);
 		}
-		Debug.Log("start----------------------------------------1");
-		Debug.Log(transform.name); //名前
-		Debug.Log(transform.tag); //タグ
-		Debug.Log("start----------------------------------------2");
+//		Debug.Log("start----------------------------------------1");
+//		Debug.Log(transform.name); //名前
+//		Debug.Log(transform.tag); //タグ
+//		Debug.Log("start----------------------------------------2");
 
 		targetShutand.SetActive (false);
 	}
@@ -33,13 +33,13 @@ public class ShutandAppearManager : MonoBehaviour, ITrackableEventHandler
 
 	private void OnTrackingFound()
 	{
-		Debug.Log("found!!!---------------------------");
+//		Debug.Log("found!!!---------------------------");
 		targetShutand.SetActive (true);
 	}
 
 	private void OnTrackingLost()
 	{
-		Debug.Log("lost!!!---------------------------");
+//		Debug.Log("lost!!!---------------------------");
 		targetShutand.SetActive (false);
 	}
 
